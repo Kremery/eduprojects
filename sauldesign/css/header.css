@@ -1,0 +1,57 @@
+/*------- Підключення шрифтів -------------- */
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Oswald:700&display=swap);
+
+.header {
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 90px;
+  column-gap: 50px;
+}
+.header__logo {
+  font-family: 'Oswald';
+  font-weight: 700;
+  font-size: 24px;
+  color: #EEEEEE;
+  /* transition: font-size 1s ease 0.3s; */
+}
+.header__logo:hover {
+  font-size: 28px;
+  transition: font-size 0.5s ease 0.3s;
+}
+.header__menu {
+}
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__item:not(:first-child) {
+  margin-left: 40px;
+}
+.header__link:hover {
+  transition: color 0.5s ease 0.3s;
+  color: #00ADB5;
+}
+@media (max-width: 489.98px) {
+  .header__container {
+    flex-direction: column;
+  }
+  .header__item:not(:first-child) {
+    margin-left: 0;
+  }
+  .header__list {
+    column-gap:15px;
+  }
+}
+@media (max-width: 374.98px) {
+  .header__list {
+    flex-direction: column;
+    text-align: center;
+  }
+}
